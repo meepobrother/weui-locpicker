@@ -1,0 +1,18 @@
+<div class="weui-cells weui-cells_form" [class.focus]="props.focus">
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">高度</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" (ngModelChange)="setHeight()" type="number" placeholder="高度" [(ngModel)]="props.height">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">腾讯秘钥</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="腾讯秘钥" [(ngModel)]="props.key">
+        </div>
+    </div>
+</div>
